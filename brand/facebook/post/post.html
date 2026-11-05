@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="bn"><head><meta charset="utf-8">
+<title>HSC Study post</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap">
+<style>
+:root{--brand:#1E3A5F;--brand-soft:#E8EEF6;--navy-light:#A9C4E6;--signal:#F59E0B;--on-signal:#3B2506;--signal-ink:#FBBF24;
+  --paper:#FAF8F4;--ink:#14202F;--muted:#575F6B;--line:#E5E0D5;--line-strong:#7B7568;--go:#15803D;--go-soft:#DCFCE7;--go-ink:#166534;
+  --fd:"Outfit","Hind Siliguri",sans-serif;--fs:"Hind Siliguri",sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--brand)}
+.post{position:relative;width:1080px;height:1350px;overflow:hidden;background-color:var(--brand);
+  background-image:linear-gradient(rgba(169,196,230,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(169,196,230,.07) 1px,transparent 1px);
+  background-size:44px 44px;color:#fff;font-family:var(--fs);padding:68px 72px 72px;display:flex;flex-direction:column;justify-content:space-between}
+.sq .post{height:1080px;padding:60px 68px 64px}
+.deco{position:absolute;opacity:.06;pointer-events:none}
+.top{display:flex;justify-content:space-between;align-items:center}
+.top img{height:50px}
+.tagline{font:600 20px/1 var(--fd);color:var(--navy-light);letter-spacing:.02em}
+.eyebrow{font:600 26px/1.3 var(--fs);color:var(--navy-light)}
+h1{font:700 82px/1.16 var(--fd);letter-spacing:-.01em}
+h1 .hl{color:var(--signal-ink)}
+.sq h1{font-size:76px}
+.lede{font:500 27px/1.5 var(--fs);color:#D3DCE8;max-width:860px}
+
+.mid{display:grid;grid-template-columns:1fr 430px;gap:28px;align-items:center}
+.sq .mid{display:block}
+.sq .card{display:none}
+.feats{display:grid;grid-template-columns:1fr;gap:14px}
+.sq .feats{grid-template-columns:1fr 1fr}
+.feat{display:flex;align-items:center;gap:16px;padding:18px 20px;border-radius:18px;background:rgba(255,255,255,.08);box-shadow:inset 0 0 0 1px rgba(255,255,255,.16)}
+.feat i{flex:none;width:52px;height:52px;border-radius:14px;background:#fff;display:grid;place-items:center}
+.feat i svg{width:28px;height:28px}
+.feat b{display:block;font:700 25px/1.25 var(--fs)}
+.feat span{font:500 19px/1.35 var(--fs);color:#C9D5E4}
+
+.card{background:#fff;color:var(--ink);border-radius:26px;padding:22px;display:flex;flex-direction:column;gap:13px;transform:rotate(1.5deg);
+  box-shadow:0 0 0 1px rgba(255,255,255,.08),0 40px 70px -30px rgba(0,0,0,.65)}
+.card-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.cap{font:500 15px/1.3 var(--fs);color:var(--muted)}
+.timer{display:inline-flex;align-items:baseline;gap:6px;padding:4px 12px;border-radius:999px;box-shadow:0 0 0 1px rgba(20,32,47,.12);font:700 18px/1.3 var(--fd)}
+.timer small{font:500 12px var(--fs);color:var(--muted)}
+.qnum{font:600 14px/1 var(--fd);color:var(--brand)}
+.q{font:500 21px/1.45 var(--fs)}
+.q sub{font-size:.65em}
+.opts{display:grid;gap:9px}
+.opt{display:flex;align-items:center;gap:10px;padding:8px 12px;border:1px solid var(--line);border-radius:12px;font:400 19px/1.3 var(--fs)}
+.bub{flex:none;width:28px;height:28px;border-radius:999px;border:2px solid var(--line-strong);display:grid;place-items:center;font:600 14px/1 var(--fs);color:var(--muted)}
+.opt.ok{border-color:var(--go);background:var(--go-soft)}
+.opt.ok .bub{background:var(--go);border-color:var(--go);color:#fff}
+.opt .v{margin-left:auto;font:600 14px/1 var(--fs);color:var(--go-ink)}
+.explain{padding:9px 13px;border-radius:12px;background:var(--brand-soft);font:400 16px/1.5 var(--fs)}
+.explain b{color:var(--brand)}
+
+.teach{display:flex;align-items:center;gap:20px;padding:22px 26px;border-radius:22px;background:var(--paper);color:var(--ink)}
+.teach i{flex:none;width:60px;height:60px;border-radius:999px;background:var(--brand);display:grid;place-items:center}
+.teach b{display:block;font:700 26px/1.3 var(--fs)}
+.teach span{font:500 20px/1.4 var(--fs);color:var(--muted)}
+
+.foot{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.pill{font:700 30px/1 var(--fs);background:var(--signal);color:var(--on-signal);padding:20px 32px 17px;border-radius:999px;box-shadow:0 18px 32px -18px rgba(0,0,0,.6)}
+.pill b{font-family:var(--fd);font-weight:800}
+.note{font:600 22px/1.4 var(--fs);color:#D3DCE8;text-align:right}
+</style></head>
+<body>
+<div class="post">
+  <svg class="deco" style="right:-150px;top:-130px" width="460" height="460" viewBox="0 0 64 64" aria-hidden="true"><path d="M14 10V54M50 10V54M14 32H50" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/><circle cx="14" cy="10" r="6.5" fill="#fff"/><circle cx="14" cy="32" r="6.5" fill="#fff"/><circle cx="14" cy="54" r="6.5" fill="#fff"/><circle cx="50" cy="10" r="6.5" fill="#fff"/><circle cx="50" cy="32" r="6.5" fill="#fff"/><circle cx="50" cy="54" r="6.5" fill="#fff"/></svg>
+
+  <div class="top"><img src="logo-horizontal-dark.svg" alt="HSC Study"></div>
+
+  <div>
+    <div class="eyebrow">একাদশ-দ্বাদশ শ্রেণির শিক্ষার্থীদের জন্য</div>
+    <h1>HSC প্রস্তুতির সব,<br><span class="hl">এক জায়গায়।</span></h1>
+  </div>
+  <p class="lede">অধ্যায় ধরে প্র্যাকটিস করো, সময় ধরে পরীক্ষা দাও,<br>আর ভুলগুলো দিয়ে আবার চেষ্টা করো।</p>
+
+  <div class="mid">
+    <div class="feats">
+      <div class="feat"><i><svg viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h6a2 2 0 012 2v14a2 2 0 00-2-2H4zM20 4h-6a2 2 0 00-2 2v14a2 2 0 012-2h6z"/></svg></i><div><b>অধ্যায়ভিত্তিক প্র্যাকটিস</b><span>MCQ ও সৃজনশীল</span></div></div>
+      <div class="feat"><i><svg viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10M19 21V10M9 21V10M15 21V10M2 10l10-6 10 6z"/></svg></i><div><b>বোর্ড প্রশ্ন</b><span>সাল আর বোর্ড বেছে নাও</span></div></div>
+      <div class="feat"><i><svg viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h8l4 4v14H7z"/><path d="M15 3v4h4M10 12h6M10 16h6"/></svg></i><div><b>কলেজের টেস্ট পেপার</b><span>সাল আর কলেজ ধরে</span></div></div>
+      <div class="feat"><i><svg viewBox="0 0 24 24" fill="none" stroke="#1E3A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M9 2h6"/></svg></i><div><b>মডেল টেস্ট ও মক টেস্ট</b><span>সময় ধরে, সাথে সাথে রেজাল্ট</span></div></div>
+    </div>
+    <div class="card">
+      <div class="card-top"><span class="cap">তথ্য ও যোগাযোগ প্রযুক্তি · ৩য় অধ্যায়</span><span class="timer"><small>বাকি</small>১২:৪০</span></div>
+      <div class="qnum">প্রশ্ন ৪ / ২৫</div>
+      <p class="q">(১০১১)<sub>২</sub> সংখ্যাটির দশমিক মান কত?</p>
+      <div class="opts">
+        <div class="opt"><span class="bub">ক</span>৯</div>
+        <div class="opt"><span class="bub">খ</span>১০</div>
+        <div class="opt ok"><span class="bub">গ</span>১১<span class="v">সঠিক</span></div>
+        <div class="opt"><span class="bub">ঘ</span>১৩</div>
+      </div>
+      <div class="explain"><b>ব্যাখ্যা:</b> ৮ + ০ + ২ + ১ = ১১</div>
+    </div>
+  </div>
+
+  <div class="teach">
+    <i><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0113 0"/><path d="M16 4.5a3.5 3.5 0 010 7M21.5 20a6.5 6.5 0 00-4-6"/></svg></i>
+    <div><b>শিক্ষকদের জন্য</b><span>ব্যাচ, অনলাইন পরীক্ষা, রেজাল্ট, প্রিন্ট করা প্রশ্নপত্র ও OMR শিট</span></div>
+  </div>
+
+  <div class="foot">
+    <span class="pill"><b>hscstudy.com</b> · লঞ্চে সব ফ্রি</span>
+    <span class="note">ICT ও বাংলা ১ম পত্র<br>দিয়ে শুরু</span>
+  </div>
+</div>
+</body></html>

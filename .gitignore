@@ -1,0 +1,12 @@
+node_modules/
+out/
+build/
+dist/
+.remotion/
+*.mp4
+*.mov
+*.webm
+*.pdf
+.DS_Store
+Thumbs.db
+*.log
